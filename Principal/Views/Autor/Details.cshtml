@@ -51,6 +51,13 @@
                 @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
                 @Html.ActionLink("Volver a la lista", "Index")
             </p>
+            <p>
+                <span class="btn btn-primary py-2 px-4 my-2">@Html.ActionLink("Anterior", "Details", new { id = Model.id, siguiente = false }, null) </span>
+                <span class="btn btn-primary py-2 px-4 my-2">@Html.ActionLink("Siguiente", "Details", new { id = Model.id, siguiente = true }, null)</span>
+
+
+            </p>
+
         </div>
     </div>
 </div>
