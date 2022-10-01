@@ -1,0 +1,86 @@
+﻿@model Datos.Datos.Tema
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<!-- Header Start -->
+<div class="jumbotron jumbotron-fluid mb-5">
+    <div class="container text-center py-5">
+        <h1 class="text-white display-3">Detalles Temas</h1>
+        <div class="d-inline-flex align-items-center text-white">
+            <p class="m-0"><a class="text-white" href="">Temas</a></p>
+            <i class="fa fa-circle px-3"></i>
+            <p class="m-0">Detalles Temas</p>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+@*<div>
+        <h4>Tema</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.nombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.link)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.link)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Disco.nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Disco.nombre)
+            </dd>
+
+        </dl>
+    </div>*@
+
+
+<!-- Tema -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-9">
+                <span>Nombre canción: </span>
+                <span class="text-primary text-uppercase font-weight-bold artista">@Html.DisplayFor(model => model.nombre)</span>
+                <br />
+                <span>Disco: </span>
+                <span class="text-primary text-uppercase font-weight-bold artista">@Html.DisplayFor(model => model.Disco.nombre)</span>
+                <br />
+                <span>Link: </span>
+                <span class="text-primary text-uppercase font-weight-bold artista"><a href="@Html.DisplayFor(model => model.link)" target="_blank" rel="noopener noreferrer">@Html.DisplayFor(model => model.link)</a></abbr></span>
+                <br />
+                <div class="d-flex align-items-center pt-2 ">
+                    <a href="@Html.DisplayFor(model => model.link)" target="_blank" rel="noopener noreferrer">
+                        <button type="button" class="btn-play">
+                            <span></span>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+
+    </div>
+    
+</div>
+
+
