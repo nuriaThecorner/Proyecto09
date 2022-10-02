@@ -190,6 +190,7 @@
     <Content Include="Scripts\mail\contact.js" />
     <Content Include="Scripts\mail\jqBootstrapValidation.min.js" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\miAjax.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\owlcarousel\assets\ajax-loader.gif" />
     <Content Include="Scripts\owlcarousel\assets\owl.carousel.css" />
@@ -247,6 +248,7 @@
     <Content Include="Views\Tema\Edit.cshtml" />
     <Content Include="Views\Tema\Index.cshtml" />
     <Content Include="Views\Disco\DiscoTema.cshtml" />
+    <Content Include="Views\Autor\_AutorPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
